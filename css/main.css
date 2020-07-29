@@ -23,7 +23,7 @@
 }
 
 .pricessection {
-    height: 80vh;
+    height: 50vh;
 }
 .optionContainer {
     display: flex;
@@ -31,17 +31,30 @@
     justify-content: center;
 }
 .option {
+    border-radius: 5em;
+    border: .25em solid black;
     width: 25vw;
-    height: 100%;
-    background-color: teal;
     margin: 2em; 
     transition: transform .2s;
+    justify-content: center;
+
 }
 .option:hover{
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
+.optionTitle {
+    text-align: center;
+    border-bottom: .2em solid hotpink;
+    margin-bottom: 1em;
+}
+.optionprice {
+    border-radius: 3em;
+    border: .25em solid hotpink;
+    width: 50%;
+    margin: 0 auto;
 
+}
 .sectiontitle {
     font-size: 3em;
     font-weight: bold;
