@@ -1,8 +1,47 @@
+/* Misc CSS */
 .container {
-    width: 95%;
+
     text-align: center;
     margin: 0 auto;
 }
+.sectiontitle {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 3px auto;
+}
+.accordion {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 20%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border: .15em solid hotpink;
+    margin-bottom: 5vh;
+    font-size: 3em;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: hotpink;
+    color: white;
+    border: .15em solid white;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: auto;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+    color: black;
+  }
+/* Header CSS */
 .headersection {
     height: 100vh;
 }
@@ -33,7 +72,7 @@
     color: hotpink;
     text-decoration: none;
 }
-
+/* Price CSS */
 .pricessection {
     height: 50vh;
 }
@@ -47,13 +86,13 @@
     border: .25em solid black;
     width: 25vw;
     margin: 2em; 
-    transition: transform .2s;
+    transition: transform .3s;
     justify-content: center;
-
 }
 .option:hover{
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+            box-shadow: 8px 10px 0.2rem rgba(0,0,0,0.3);
   }
 .optionTitle {
     text-align: center;
@@ -67,7 +106,7 @@
     margin: 0 auto;
 
 }
-.sectiontitle {
-    font-size: 3em;
-    font-weight: bold;
+.portfoliosection {
+    height: 50vh;
+    background-color:rgb(177, 177, 177);
 }
