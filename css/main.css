@@ -6,15 +6,15 @@
 .headersection {
     height: 100vh;
 }
-.headercontainer {
+.headerwrap {
     display: block;
     top: 40%;
     left: 50%;
-    position: absolute;
+    position: relative;
     transform: translate(-50%, -50%);
     color: rgb(221, 220, 220);
 }
-.headercontainer img {
+.headerwrap img {
     border-radius: 50%;
 }
 .headerlink {
