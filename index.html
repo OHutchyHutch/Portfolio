@@ -5,73 +5,80 @@
   <title>Owen's Portfolio</title>
   <meta name="description" content="A portfolio for Owen Hutchins">
   <meta name="author" content="Owen Hutchins" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
   <link rel="stylesheet" href="css/particles.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  
 </head>
 <body>
 
 <div id="particles-js"></div>
 <div class="container">
-    <div class="headersection">
-        <div class="headerwrap" id="headerwrap">
-            <img src=https://i.imgur.com/yREmc3I.png?1 class="particleimage"/>
-            <h1 style="margin: 3px auto;">Owen "Forodin"</h1>
-            <h3 style="margin: 3px auto;">Just another developer</h3>
-            <h4 style="margin: 3px auto;">Forodin#3951 | <a class="headerlink" href="https://www.instagram.com/ohutchyhutch/">Instagram</a> | <a class="headerlink" href="https://github.com/OHutchyHutch">Github</a></h4>
-        </div>
-    </div>
-    <div class="pricessection">
-        <p class="sectiontitle"> Prices </p>
-        <h3 style="margin: 3px auto;">*These are just estimates, contact me for a more accurate quote!</h1>
-        <div class="optionContainer">
-            <div class="option">
-                <h1 class="optionTitle">Small Site</h1>
-                <h2>Typically 1-3 Pages</h2>
-                <h2>Typically little functionality/backend</h2>
-                <h2>• Smooth</h2>
-                <h2>• Responsive</h2>
-                <h2>• Animated</h2>
-                <div class="optionprice">
-                    <h1>$60-$399</h1>
-                </div>
-            </div>
-            <div class="option">
-                <h1 class="optionTitle">Medium Site</h1>
-                <h2>Typically 3-5 Pages</h2>
-                <h2>Typically some functionality/backend</h2>
-                <h2>• Smooth</h2>
-                <h2>• Responsive</h2>
-                <h2>• Animated</h2>
-                <div class="optionprice">
-                    <h1>$400-$999</h1>
-                </div>
-            </div>
-            <div class="option">
-                <h1 class="optionTitle">Large Site</h1>
-                <h2>Typically 5+ Pages</h2>
-                <h2>Typically extensive functionality/backend</h2>
-                <h2>• Smooth</h2>
-                <h2>• Responsive</h2>
-                <h2>• Animated</h2>
-                <div class="optionprice">
-                    <h1>$1000+</h1>
-                </div>
+    <div id="headersection" class="row headersection">
+        <div class="col">
+            <div class="headerwrap" id="headerwrap">
+                <img src=https://i.imgur.com/yREmc3I.png?1 class="particleimage"/>
+                <h1 style="margin: 3px auto;">Owen "Forodin"</h1>
+                <h3 style="margin: 3px auto;">Just another developer</h3>
+                <h4 style="margin: 3px auto;">Forodin#3951 | <a class="headerlink" href="https://www.instagram.com/ohutchyhutch/">Instagram</a> | <a class="headerlink" href="https://github.com/OHutchyHutch">Github</a></h4>
             </div>
         </div>
     </div>
-    <div class="portfoliosection">
-
+    <div id="pricesection" class="pricessection">
+        <div class="row">
+            <p class="sectiontitle"> Prices </p>
+        </div>
+        <div class="row justify-content-center">
+            <p>*These are just estimates, contact me for a more accurate quote!</p>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-lg option p-4 mx-2">
+                <h2 class="optionTitle">Small Site</h2>
+                <h4>Typically 1-3 Pages</h4>
+                <h4>Typically little functionality/backend</h4>
+                <h4>• Smooth</h4>
+                <h4>• Responsive</h4>
+                <h4>• Animated</h4>
+                <div class="optionprice">
+                    <h2>$60-$399</h2>
+                </div>
+              </div>
+              <div class="col-lg option p-4 mx-2">
+                <h2 class="optionTitle">Medium Site</h2>
+                <h4>Typically 1-3 Pages</h4>
+                <h4>Typically little functionality/backend</h4>
+                <h4>• Smooth</h4>
+                <h4>• Responsive</h4>
+                <h4>• Animated</h4>
+                <div class="optionprice">
+                    <h2>$400-$999</h2>
+                </div>
+              </div>
+              <div class="col-lg option p-4 mx-2">
+                <h2 class="optionTitle">Large Site</h2>
+                <h4>Typically 1-3 Pages</h4>
+                <h4>Typically little functionality/backend</h4>
+                <h4>• Smooth</h4>
+                <h4>• Responsive</h4>
+                <h4>• Animated</h4>
+                <div class="optionprice">
+                    <h2>$1000+</h2>
+                </div>
+              </div>
+            
+        </div>
     </div>
 </div>
 
-
 <!-- scripts -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
 <script src="js/accordion.js"></script>
-
+<script src="js/progessbar.js"></script>
 
 </body>
 </html>
