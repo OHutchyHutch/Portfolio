@@ -1,0 +1,23 @@
+.container {
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+}
+.headersection {
+    height: 100vh;
+}
+.headercontainer {
+    display: block;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: rgb(221, 220, 220);
+}
+.headercontainer img {
+    border-radius: 50%;
+}
+.headerlink {
+    color: hotpink;
+    text-decoration: none;
+}
