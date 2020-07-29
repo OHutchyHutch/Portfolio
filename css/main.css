@@ -21,3 +21,28 @@
     color: hotpink;
     text-decoration: none;
 }
+
+.pricessection {
+    height: 80vh;
+}
+.optionContainer {
+    display: flex;
+    height: 80%;
+    justify-content: center;
+}
+.option {
+    width: 25vw;
+    height: 100%;
+    background-color: teal;
+    margin: 2em; 
+    transition: transform .2s;
+}
+.option:hover{
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+
+.sectiontitle {
+    font-size: 3em;
+    font-weight: bold;
+}
