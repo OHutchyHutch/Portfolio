@@ -11,7 +11,7 @@
 .divider{
 	position: relative;
     margin-top: 15vh;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 	height: 2px;
 }
 .div-transparent:before{
@@ -116,4 +116,13 @@
   }
 .progress {
     border-radius: 0 !important;
+}
+/* Portfolio */
+.card{
+    transition: transform .3s;
+}
+.card:hover{
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            box-shadow: 8px 10px 0.2rem rgba(0,0,0,0.3);
 }
