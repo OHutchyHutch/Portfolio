@@ -67,10 +67,6 @@
     text-decoration: none;
 }
 /* Price CSS */
-.pricessection {
-    height: 50vh;
-    margin-bottom: 2vh;
-}
 .option {
     border-radius: 4em;
     border: .15em solid black;
@@ -97,9 +93,6 @@
 
 }
 /* About Me CSS */
-.aboutsection {
-    height: 50vh;
-}
 .aboutme {
     justify-content: center;
     height: 100%;
