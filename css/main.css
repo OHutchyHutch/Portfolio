@@ -68,7 +68,7 @@
 }
 /* Price CSS */
 .option {
-    border-radius: 4em;
+    border-radius: 2.5em;
     border: .15em solid black;
     transition: transform .3s;
     justify-content: center;
@@ -90,8 +90,8 @@
     width: 80%;
     margin: 0 auto;
     margin-bottom: 2vh;
-
 }
+  
 /* About Me CSS */
 .aboutme {
     justify-content: center;
@@ -109,6 +109,12 @@
   }
 .progress {
     border-radius: 0 !important;
+}
+@-webkit-keyframes animate-positive{
+    0% { width: 0%; }
+}
+@keyframes animate-positive{
+    0% { width: 0%; }
 }
 /* Portfolio */
 .card{
