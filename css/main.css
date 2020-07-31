@@ -81,12 +81,14 @@
   }
 .optionTitle {
     text-align: center;
-    border-bottom: .2em solid hotpink;
+    border-bottom: .1em solid hotpink;
     margin-bottom: 1em;
 }
 .optionprice {
+    color:white;
+    background-color:hotpink;
     border-radius: 3em;
-    border: .25em solid hotpink;
+    border: .25em solid white;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 2vh;
