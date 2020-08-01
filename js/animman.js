@@ -1,6 +1,6 @@
 //Handles progress bar
 $(document).ready(function() {
-    $('.progress-bar').waypoint(function() {
+    $('#aboutsection').waypoint(function() {
     $('.progress-bar').css({
     animation: "animate-positive 3s",
     opacity: "1"
@@ -15,6 +15,7 @@ $(document).ready(function(){
   });
 
 function animatesection(section, animation){
+  if(section != "#aboutsection"){
     $(section).css('opacity', 0);
     $(section).waypoint(function() {
         $(section).addClass(animation + ' animate__slow');
@@ -22,4 +23,14 @@ function animatesection(section, animation){
             opacity: "1"
             });
     }, { offset: '50%' });
+  }
+  else {
+    $(section).css('opacity', 0);
+    $(section).waypoint(function() {
+        $(section).addClass(animation + ' animate__slow');
+        $(section).css({
+            opacity: "1"
+            });
+    }, { offset: '50%' });
+  }
   }
