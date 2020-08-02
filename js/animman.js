@@ -5,7 +5,7 @@ $(document).ready(function() {
     animation: "animate-positive 3s",
     opacity: "1"
     });
-    }, { offset: '75%' })});
+    }, { offset: '65%' })});
 //Animates aboutme section
 $(document).ready(function(){
     animatesection('#aboutsection','animate__fadeInLeft');
@@ -24,7 +24,7 @@ function animatesection(section, animation){
         $(section).css({
             opacity: "1"
             });
-    }, { offset: '50%' });
+    }, { offset: '65%' });
   }
   else {
     $(section).css('opacity', 0);
@@ -34,6 +34,6 @@ function animatesection(section, animation){
         $(section).css({
             opacity: "1"
             });
-    }, { offset: '50%' });
+    }, { offset: '65%' });
   }
   }
