@@ -10,7 +10,8 @@ $(document).ready(function() {
 $(document).ready(function(){
     animatesection('#aboutsection','animate__fadeInLeft');
     animatesection('#portfoliosection','animate__fadeInRight');
-    animatesection('#pricesection','animate__fadeInUp');
+    animatesection('#pricesection','animate__fadeInLeft');
+    animatesection('#contactsection', 'animate__fadeIn  Up');
     animatesection('.divider','animate__flipInX');
   });
 
@@ -18,6 +19,7 @@ function animatesection(section, animation){
   if(section != "#aboutsection"){
     $(section).css('opacity', 0);
     $(section).waypoint(function() {
+      console.log(section)
         $(section).addClass(animation + ' animate__slow');
         $(section).css({
             opacity: "1"
@@ -27,6 +29,7 @@ function animatesection(section, animation){
   else {
     $(section).css('opacity', 0);
     $(section).waypoint(function() {
+      console.log(section)
         $(section).addClass(animation + ' animate__slow');
         $(section).css({
             opacity: "1"

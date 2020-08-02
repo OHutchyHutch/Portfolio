@@ -66,34 +66,6 @@
     color: hotpink;
     text-decoration: none;
 }
-/* Price CSS */
-.option {
-    border-radius: 2.5em;
-    border: .15em solid black;
-    transition: transform .3s;
-    justify-content: center;
-    margin-bottom: 5vh;
-}
-.option:hover{
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-            box-shadow: 8px 10px 0.2rem rgba(0,0,0,0.3);
-  }
-.optionTitle {
-    text-align: center;
-    border-bottom: .1em solid hotpink;
-    margin-bottom: 1em;
-}
-.optionprice {
-    color:white;
-    background-color:hotpink;
-    border-radius: 3em;
-    border: .25em solid white;
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 2vh;
-}
-  
 /* About Me CSS */
 .aboutme {
     justify-content: center;
@@ -126,4 +98,43 @@
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
             box-shadow: 8px 10px 0.2rem rgba(0,0,0,0.3);
+}
+/* Price CSS */
+.option {
+    border-radius: 2.5em;
+    border: .15em solid black;
+    transition: transform .3s;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+.option:hover{
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            box-shadow: 8px 10px 0.2rem rgba(0,0,0,0.3);
+  }
+.optionTitle {
+    text-align: center;
+    border-bottom: .1em solid hotpink;
+    margin-bottom: 1em;
+}
+.optionprice {
+    color:white;
+    background-color:hotpink;
+    border-radius: 3em;
+    border: .25em solid white;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2vh;
+}
+
+/*Contact CSS */
+.contactlink{
+    font-size: 1.75em;
+    text-decoration: none;
+    color: hotpink;
+
+}
+
+.footer{
+    height: 20vh;
 }
