@@ -1,42 +1,23 @@
-/* Misc CSS */
+/* -----------------------------------------------------------------
+    - Website
+----------------------------------------------------------------- */
+body{
+    background-color: rgb(56, 56, 56) !important;
+    color: whitesmoke !important;
+}
 .container {
     text-align: center;
     margin: 0 auto;
+    
 }
 .sectiontitle {
     font-size: 3em;
     font-weight: bold;
     margin: 3px auto;
 }
-.divider{
-	position: relative;
-    margin-top: 15vh;
-    margin-bottom: 5vh;
-	height: 2px;
-}
-.div-transparent:before{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 5%;
-	right: 5%;
-	width: 90%;
-	height: 2px;
-	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
-}
-.div-stopper:after{
-	content: "";
-	position: absolute;
-	z-index: 1;
-	top: -6px;
-	left: calc(50% - 7px);
-	width: 14px;
-	height: 12px;
-	background-color: white;
-	border-left: 1px solid rgb(48,49,51);
-	border-right: 1px solid rgb(48,49,51);
-}
-/* Header CSS */
+/* -----------------------------------------------------------------
+    - Header
+----------------------------------------------------------------- */
 .headersection {
     height: 100vh;
 }
@@ -66,6 +47,9 @@
     color: hotpink;
     text-decoration: none;
 }
+/* -----------------------------------------------------------------
+    - About
+----------------------------------------------------------------- */
 /* About Me CSS */
 .aboutme {
     justify-content: center;
@@ -99,9 +83,14 @@
             transform: scale(1.1);
             box-shadow: 8px 10px 0.2rem rgba(0,0,0,0.3);
 }
-/* Price CSS */
+/* -----------------------------------------------------------------
+    - Portfolio
+----------------------------------------------------------------- */
+/* -----------------------------------------------------------------
+    - Options
+----------------------------------------------------------------- */
 .option {
-    border-radius: 2.5em;
+    border-radius: 1em;
     border: .15em solid black;
     transition: transform .3s;
     justify-content: center;
@@ -110,7 +99,6 @@
 .option:hover{
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
-            box-shadow: 8px 10px 0.2rem rgba(0,0,0,0.3);
   }
 .optionTitle {
     text-align: center;
@@ -126,15 +114,14 @@
     margin: 0 auto;
     margin-bottom: 2vh;
 }
-
-/*Contact CSS */
+/* -----------------------------------------------------------------
+    - Contact
+----------------------------------------------------------------- */
 .contactlink{
     font-size: 1.75em;
     text-decoration: none;
     color: hotpink;
-
 }
-
 .footer{
     height: 22vh;
 }
