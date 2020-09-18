@@ -27,7 +27,7 @@ body{
 .accent {
     color: hotpink;
 }
-/* Medium devices (desktops, 992px and up) */
+/* Medium devices (desktops, 1400px and up) */
 @media (max-width: 1400px) { 
     .particles{
         height:200vh !important;
@@ -35,6 +35,21 @@ body{
     .container-fluid {
         text-align: center;
         height: 200vh;
+        margin: 0 auto;
+        background-color: rgb(56, 56, 56, 0.7) !important;
+    }
+    .bordered {
+        border-color: rgb(245, 245, 245, 0.0);
+    }
+ }
+ /* Small devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    .particles{
+        height:250vh !important;
+    }
+    .container-fluid {
+        text-align: center;
+        height: 250vh;
         margin: 0 auto;
         background-color: rgb(56, 56, 56, 0.7) !important;
     }
@@ -76,19 +91,46 @@ body{
     - Options
 ----------------------------------------------------------------- */
 .optionscard {
-    background-color: white;
-    color: black;
+    background-color: rgb(56, 56, 56, 1);
+    border-radius: 1em !important;
+    color: whitesmoke;
     height: 5em;
     width:90%;
+    transition: transform .5s;
 }
-.pricedivideright {
-    border-color: rgb(0, 0, 0, 0.8);
-    border-right: 2px solid;
+.optionscard h1 {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.7em;
 }
-.pricedivideleft {
-    border-color: rgb(0, 0, 0, 0.8);
-    border-left: 2px solid;
+.optionscard:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
 }
+.priceleft {
+    background-color: hotpink;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+.priceright {
+    background-color: hotpink;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+
+}
+.title {
+    color: hotpink;
+}
+ /* Small devices (desktops, 992px and up) */
+ @media (max-width: 992px) { 
+    .optionscard h1{
+        font-size: 1.8em;
+        line-height: 2.5em;
+    }
+    .optionscard p{
+        font-size: .9em;
+    }
+ }
 /* -----------------------------------------------------------------
     - Card
 ----------------------------------------------------------------- */
