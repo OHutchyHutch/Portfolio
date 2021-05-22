@@ -1,0 +1,241 @@
+/* -----------------------------------------------------------------
+    - Website
+----------------------------------------------------------------- */
+
+body {
+    color: whitesmoke !important;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    text-align: center;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(56, 56, 56, 0.7) !important;
+}
+
+.section {
+    height: 100%;
+}
+
+.bordered {
+    border-color: rgb(245, 245, 245, 0.5);
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
+
+.sectiontitle {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 3px auto;
+}
+
+.accent {
+    color: hotpink;
+}
+
+
+/* Medium devices (desktops, 1400px and up) */
+
+@media (max-width: 1400px) {
+    .particles {
+        height: 200vh !important;
+    }
+    .container-fluid {
+        text-align: center;
+        height: 200vh;
+        margin: 0 auto;
+        background-color: rgb(56, 56, 56, 0.7) !important;
+    }
+    .bordered {
+        border-color: rgb(245, 245, 245, 0.0);
+    }
+}
+
+
+/* Small devices (desktops, 992px and up) */
+
+@media (max-width: 992px) {
+    .particles {
+        height: 300vh !important;
+    }
+    .container-fluid {
+        text-align: center;
+        height: 300vh;
+        margin: 0 auto;
+        background-color: rgb(56, 56, 56, 0.7) !important;
+    }
+    .bordered {
+        border-color: rgb(245, 245, 245, 0.0);
+    }
+}
+
+
+/* -----------------------------------------------------------------
+    - Header
+----------------------------------------------------------------- */
+
+.headerimage {
+    border-radius: 50%;
+}
+
+.link {
+    color: hotpink;
+    text-decoration: none;
+}
+
+.saying {
+    color: hotpink;
+    padding: 0px auto !important;
+    margin-top: 5px !important;
+}
+
+.socialicon {
+    height: 32px;
+    width: 32px;
+    transition: transform .4s;
+}
+
+.socialicon:hover {
+    -webkit-transform: scale(1.1) rotate(360deg);
+    transform: scale(1.1) rotate(360deg);
+}
+
+
+/* -----------------------------------------------------------------
+    - About
+----------------------------------------------------------------- */
+
+.me {
+    border-radius: 50%;
+}
+
+
+/* -----------------------------------------------------------------
+    - Options
+----------------------------------------------------------------- */
+
+.optionscard {
+    background-color: rgb(56, 56, 56, 1);
+    border-radius: 1em !important;
+    color: whitesmoke;
+    height: 5em;
+    width: 90%;
+    transition: transform .5s;
+}
+
+.optionscard h1 {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.7em;
+}
+
+.optionscard:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.priceleft {
+    background-color: hotpink;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.priceright {
+    background-color: hotpink;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.title {
+    color: hotpink;
+}
+
+
+/* Small devices (desktops, 992px and up) */
+
+@media (max-width: 992px) {
+    .optionscard h1 {
+        font-size: 1.8em;
+        line-height: 2.5em;
+    }
+    .optionscard p {
+        font-size: .9em;
+    }
+}
+
+
+/* -----------------------------------------------------------------
+    - Card
+----------------------------------------------------------------- */
+
+.card {
+    width: 216px;
+    /* 360 */
+    height: 240px;
+    /* 400 */
+    background: #000;
+}
+
+.card .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card .image img {
+    width: 100%;
+    transition: .5s;
+}
+
+.card:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);
+    /*100%*/
+}
+
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    /*100%*/
+    height: 100%;
+    background: rgb(56, 56, 56);
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+
+.card:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+
+.card .details .center {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card .details .center h1 {
+    margin: 0;
+    padding: 0;
+    color: hotpink;
+    line-height: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.card .details .center h1 span {
+    font-size: 14px;
+    color: #262626;
+}
+
+.card .details .center p {
+    margin: 10px 0;
+    padding: 0;
+    color: #262626;
+}
